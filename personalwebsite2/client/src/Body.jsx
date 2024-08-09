@@ -3,6 +3,7 @@ import NavBar from "./Component/Navbar";
 import Hero from "./Component/Hero";
 import About from "./Component/About";
 import Project from "./Component/project";
+import Experience from "./Component/Experience";
 
 function Body() {
   return (
@@ -11,6 +12,7 @@ function Body() {
       <Hero />
       <About />
       <Project />
+      <Experience />
     </>
   );
 }

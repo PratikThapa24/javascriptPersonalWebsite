@@ -15,7 +15,7 @@ function AboutComponent() {
     <>
       <div id="about" className="w-1/2 flex flex-col">
         <div className="text-4xl font-extrabold tracking-widest">about</div>
-        <div className="font-bold mt-3">NCSU '25, Student</div>
+        <div className="mt-14 text-2xl font-extrabold">NCSU '25, Student</div>
 
         {Object.entries(aboutBlock).map(([key, value]) => {
           return <AboutBlock key={key} text={value} />;
