@@ -1,6 +1,8 @@
 import React from "react";
+import Typewriter from "typewriter-effect";
 
 function Hero() {
+  const strings = ["Full Stack Development.", "Machine Learning."];
   return (
     <>
       <div className="relative container mx-auto flex flex-row justify-between items-center min-h-screen px-4">
@@ -14,9 +16,17 @@ function Hero() {
               Pratik Thapa
             </h1>
             <h1 className="text-xl text-custom-text-charcoal">
-              I'm a student with an 
-              <br />
-              interest in Full Stack Development, Machine Learning
+              I'm a student with an interest in{" "}
+              <span className="inline">
+                <Typewriter
+                  options={{
+                    strings: strings,
+                    autoStart: true,
+                    loop: true,
+                    wrapperClassName: "text-custom-text-coolTeal inline",
+                  }}
+                />
+              </span>
             </h1>
           </div>
         </div>

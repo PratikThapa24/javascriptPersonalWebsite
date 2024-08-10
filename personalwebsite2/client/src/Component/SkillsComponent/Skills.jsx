@@ -1,7 +1,16 @@
 import React from "react";
-import SkillsBlock from "./SkillsBlock"
+import SkillsBlock from "./SkillsBlock";
+import RoughHighlight from "../RoughHighlight";
 
-const languages = ["Python", "Java", "C/C++", "JavaScript", "Bash"];
+const languages = [
+  "Python",
+  "Java",
+  "C/C++",
+  "JavaScript",
+  "Bash",
+  "TypeScript",
+  "HTML",
+];
 const front_end_development = [
   "React",
   "Bootstrap",
@@ -27,7 +36,9 @@ function Skills() {
     <>
       {/* Skills section */}
       <div id="skill" className="justify-center w-1/2 flex flex-col">
-        <div className="text-4xl font-extrabold tracking-widest">skills</div>
+        <div className="text-4xl font-extrabold tracking-widest">
+          <RoughHighlight>skills</RoughHighlight>
+        </div>
 
         {/* Languages */}
         <SkillsBlock title="languages" skill={languages} />

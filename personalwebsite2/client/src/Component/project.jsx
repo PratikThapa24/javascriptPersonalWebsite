@@ -1,5 +1,6 @@
 import React from "react";
 import ProjectBlock from "./ProjectComponent/ProjectBlock";
+import RoughHighlight from "./RoughHighlight";
 
 const projects = {
   // Format ["imagePath", "projectTitle", "sk1", "sk2", "sk3", "projectDescription", "githubLink", "websiteLink"
@@ -155,7 +156,7 @@ function Project() {
   return (
     <>
       <div className="relative container mx-auto text-4xl font-extrabold text-custom-text-charcoal mt-12 text-center">
-        projects
+        <RoughHighlight>projects</RoughHighlight>
       </div>
       <div className="relative container mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-y-6 gap-x-4 min-h-screen px-4 items-center">
         {Object.entries(projects).map(([key, value]) => {

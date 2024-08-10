@@ -28,7 +28,7 @@ function ProjectBlock({
         onClick={toggleModal}
       >
         {/* Front Side of card */}
-        <div className="w-full h-60 bg-white border-4 border-custom-text-charcoal rounded-lg ">
+        <div className="w-full h-48 bg-white border-4 border-custom-text-charcoal rounded-lg ">
           <img
             className="object-cover w-full h-full"
             src={imagePath}
