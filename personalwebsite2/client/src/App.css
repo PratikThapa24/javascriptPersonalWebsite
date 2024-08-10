@@ -32,3 +32,11 @@
     transform: rotateY(180deg);
   }
   
+  .textarea-container {
+    height: 100%; /* or a specific height like 300px */
+  }
+  
+  textarea#editor {
+    height: 100%; /* Make sure the textarea takes up the full height */
+  }
+  

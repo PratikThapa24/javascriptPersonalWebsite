@@ -1,7 +1,8 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import SkillBox from "../SkillsComponent/SkillBox";
 import Modal from "./Modal";
 import GitHubIcon from "@mui/icons-material/GitHub";
+import DisplayHTMLContent from "../DisplayHtmlContent";
 
 function ProjectBlock({
   imagePath,
@@ -47,15 +48,11 @@ function ProjectBlock({
       </div>
 
       {/* Modal */}
-      <Modal
-        isOpen={isModalOpen}
-        onClose={toggleModal}
-        title={projectTitle}
-      >
+      <Modal isOpen={isModalOpen} onClose={toggleModal} title={projectTitle}>
         <div className="flex flex-col space-y-4">
-          <div className="flex flex-row">
+          <div className="flex flex-col justify-center items-center">
             {/* Image on the left */}
-            <div className="w-1/2 h-60">
+            <div className="w-1/2 h-60 justify-center text-center items-center">
               <img
                 className="w-full h-48 md:h-full rounded-lg"
                 src={imagePath}
@@ -64,9 +61,13 @@ function ProjectBlock({
             </div>
 
             {/* Description on the right */}
-            <div className="w-1/2 ml-6">
-              <p className="text-base leading-relaxed text-custom-text-softBlack mb-4">
-                {projectDescription}
+            <div className="m-6 ">
+              <p
+                className="text-base leading-relaxed text-custom-text-softBlack"
+                style={{ maxHeight: "400px", overflowY: "auto" }} // Adjust maxHeight as needed
+              >
+                {/* {projectDescription} */}
+                <DisplayHTMLContent content={projectDescription} />
               </p>
             </div>
           </div>
