@@ -6,19 +6,6 @@ import reportWebVitals from "./reportWebVitals";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
-document.addEventListener("DOMContentLoaded", function () {
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach((entry) => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add("visible");
-      }
-    });
-  });
-
-  const elements = document.querySelectorAll(".scroll-animation");
-  elements.forEach((element) => observer.observe(element));
-});
-
 root.render(
   <React.StrictMode>
     <App />

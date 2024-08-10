@@ -6,7 +6,11 @@ const projects = {
   // Format ["imagePath", "projectTitle", "sk1", "sk2", "sk3", "projectDescription", "githubLink", "websiteLink"
   1: [
     "letsStudyTogether.png",
-    "LetsStudyTogether",
+    <>
+      <RoughHighlight typeBox="box" color="#2E2E2E" strokeWidth={2}>
+        Lets Study Together
+      </RoughHighlight>
+    </>,
     "React",
     "Express",
     "Javascript",
@@ -22,7 +26,11 @@ const projects = {
   ],
   2: [
     "leetcodeBlog.png",
-    "LeetCode Journal",
+    <>
+      <RoughHighlight typeBox="box" color="#2E2E2E" strokeWidth={2}>
+        Leet Code Journal
+      </RoughHighlight>
+    </>,
     "React",
     "Express",
     "Javascript",
@@ -38,7 +46,11 @@ const projects = {
   ],
   3: [
     "jobLogify.png",
-    "Job Logify",
+    <>
+      <RoughHighlight typeBox="box" color="#2E2E2E" strokeWidth={2}>
+        Job Logify
+      </RoughHighlight>
+    </>,
     "React",
     "Express",
     "Javascript",
@@ -60,7 +72,11 @@ const projects = {
   ],
   4: [
     "personalBlog.png",
-    "Personal Blog",
+    <>
+      <RoughHighlight typeBox="box" color="#2E2E2E" strokeWidth={2}>
+        Personal Blog
+      </RoughHighlight>
+    </>,
     "Flask",
     "SQLite",
     "Python",
@@ -77,7 +93,11 @@ const projects = {
   ],
   5: [
     "robotThatPlaySoccer.jpg",
-    "Robot That Plays Soccer",
+    <>
+      <RoughHighlight typeBox="box" color="#2E2E2E" strokeWidth={2}>
+        Robot That Plays Soccer
+      </RoughHighlight>
+    </>,
     "TensorFlow",
     "Python",
     "Convolutional Neural Network",
@@ -96,7 +116,11 @@ const projects = {
   ],
   6: [
     "spotifyPlaylistMaker.jpg",
-    "Spotify Playlist Maker",
+    <>
+      <RoughHighlight typeBox="box" color="#2E2E2E" strokeWidth={2}>
+        Spotify Playlist Maker
+      </RoughHighlight>
+    </>,
     "Python",
     "BeautifulSoup",
     "Spotipy",
@@ -113,7 +137,11 @@ const projects = {
   ],
   7: [
     "personalWebsite.png",
-    "Personal Website",
+    <>
+      <RoughHighlight typeBox="box" color="#2E2E2E" strokeWidth={2}>
+        Personal Website
+      </RoughHighlight>
+    </>,
     "React",
     "Javascript",
     "TailWindCSS",
@@ -131,7 +159,11 @@ const projects = {
   ],
   8: [
     "wolfScheduler.png",
-    "Wolf Scheduler",
+    <>
+      <RoughHighlight typeBox="box" color="#2E2E2E" strokeWidth={2}>
+        Wolf Scheduler
+      </RoughHighlight>
+    </>,
     "Java",
     "Junit",
     "Object Oriented Programming",

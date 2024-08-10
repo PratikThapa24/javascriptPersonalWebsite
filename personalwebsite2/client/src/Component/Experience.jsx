@@ -4,26 +4,57 @@ import RoughHighlight from "./RoughHighlight";
 function ExperienceTimeline() {
   const experiences = [
     {
-      company: "North Carolina State University",
+      company: (
+        <>
+          <RoughHighlight typeBox="box" color="#2E2E2E" strokeWidth={2}>
+            North Carolina State University
+          </RoughHighlight>
+        </>
+      ),
       role: "Undergraduate Researcher",
       location: "Raleigh, NC",
       duration: "August 2023 - Present",
       description: [
         "Conducting research under the supervision of Dr. Man-Ki Yoon at North Carolina State University.",
         "Utilizing ROS2 and Python to develop a 1/16 scale self-driving car capable of lane-keeping, turning, and stop sign detection.",
-        "Currently working on publishing a paper focused on localization techniques.",
+        <>
+          Currently working on{" "}
+          <RoughHighlight typeBox="underline" color="#2E2E2E" strokeWidth={2}>
+            publishing a paper focused on localization techniques.
+          </RoughHighlight>
+        </>,
         "Implementing a two-step localization process using Faster R-CNN combined with a feedforward neural network (FFNN) to predict the car's location based solely on images.",
         "Employing LiDAR technology for simultaneous localization and mapping (SLAM).",
       ],
-    },
+    },  
     {
-      company: "Self-Employed",
+      company: (
+        <>
+          <RoughHighlight typeBox="box" color="#2E2E2E" strokeWidth={2}>
+            Self Employed
+          </RoughHighlight>
+        </>
+      ),
       role: "Solopreneur",
       location: "Remote",
       duration: "Ongoing",
       description: [
         "Worked on full-scale projects from coding to production and deployment, handling all aspects of software development independently.",
-        "Successfully deployed two websites: LetsStudyTogether.net, a platform designed to enhance study productivity, and LeetCodeJournal.com, a tool for journaling LeetCode solutions.",
+        <>
+          Successfully deployed two websites:{" "}
+          <a href="https://www.letsstudytogether.net/" target="_blank">
+            <RoughHighlight typeBox="underline" color="#2E2E2E" strokeWidth={2}>
+              www.letsstudytogether.net
+            </RoughHighlight>
+          </a>
+          , a platform designed to enhance study productivity, and{" "}
+          <a href="https://www.leetcodejournal.com/" target="_blank">
+            <RoughHighlight typeBox="underline" color="#2E2E2E" strokeWidth={2}>
+              www.leetCodejournal.com
+            </RoughHighlight>
+          </a>
+          , a tool for journaling LeetCode solutions.
+        </>,
         "Assisted individuals in creating their personal websites, providing guidance on design, development, and deployment.",
         "Gained extensive experience in end-to-end software development, from initial concept to live production environments.",
       ],

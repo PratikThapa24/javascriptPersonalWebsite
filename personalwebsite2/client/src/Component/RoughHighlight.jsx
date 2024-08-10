@@ -1,20 +1,41 @@
-// RoughHighlight.js
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { RoughNotation } from "react-rough-notation";
 import { useInView } from "react-intersection-observer";
 
-function RoughHighlight({ children, color = "#E5A4B2", threshold = 0.6 }) {
+function RoughHighlight({
+  children,
+  color = "#E06C75",
+  threshold = 0.6,
+  typeBox = "highlight",
+  alwaysHighlight = false,
+  strokeWidth = null
+}) {
+  const [isInView, setIsInView] = useState(false);
+
   const { ref, inView } = useInView({
     triggerOnce: true,
     threshold: threshold,
   });
 
+  useEffect(() => {
+    if (alwaysHighlight || inView) {
+      setIsInView(true);
+    }
+  }, [inView, alwaysHighlight]);
+
   return (
-    <div ref={ref}>
-      <RoughNotation type="highlight" show={inView} color={color} animationDuration={2000}>
+    <span ref={ref} style={{ display: "inline" }}>
+      <RoughNotation
+        type={typeBox}
+        show={isInView}
+        color={color}
+        strokeWidth={strokeWidth}
+        animationDuration={2000}
+        multiline={false}
+      >
         {children}
       </RoughNotation>
-    </div>
+    </span>
   );
 }
 

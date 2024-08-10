@@ -14,7 +14,7 @@ function NavBar() {
   };
 
   return (
-    <nav className="navbar bg-custom-text-coolTeal text-white">
+    <nav className="navbar bg-custom-text-coolTeal text-custom-text-darkGray">
       <div className="container mx-auto flex justify-center items-center px-4 py-2">
         <div className="flex space-x-14 tracking-widest items-center">
           <Link
@@ -28,13 +28,12 @@ function NavBar() {
             <RoughNotation
               type="underline"
               show={hoveredLink === "home"}
-              color="#fff"
+              color="#2E2E2E"
               animationDuration={1000}
               strokeWidth={3}
             >
-              Home
+              home
             </RoughNotation>
-            
           </Link>
           <Link
             to="about"
@@ -47,11 +46,11 @@ function NavBar() {
             <RoughNotation
               type="underline"
               show={hoveredLink === "about"}
-              color="#fff"
+              color="#2E2E2E"
               animationDuration={1000}
               strokeWidth={3}
             >
-              About
+              about
             </RoughNotation>
           </Link>
           <Link
@@ -65,11 +64,11 @@ function NavBar() {
             <RoughNotation
               type="underline"
               show={hoveredLink === "project"}
-              color="#fff"
+              color="#2E2E2E"
               animationDuration={1000}
               strokeWidth={3}
             >
-              Projects
+              projects
             </RoughNotation>
           </Link>
           <Link
@@ -83,11 +82,11 @@ function NavBar() {
             <RoughNotation
               type="underline"
               show={hoveredLink === "experience"}
-              color="#fff"
+              color="#2E2E2E"
               animationDuration={1000}
               strokeWidth={3}
             >
-              Experience
+              experience
             </RoughNotation>
           </Link>
         </div>

@@ -1,4 +1,5 @@
 import React from "react";
+import DisplayHTMLContent from "../DisplayHtmlContent";
 
 function AboutBlock(props) {
   return (

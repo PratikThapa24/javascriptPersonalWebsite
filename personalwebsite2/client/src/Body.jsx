@@ -5,6 +5,7 @@ import About from "./Component/About";
 import Project from "./Component/project";
 import Experience from "./Component/Experience";
 import AnimatedSection from "./Component/AnimatedSection";
+import Footer from "./Component/Footer";
 
 function Body() {
   return (

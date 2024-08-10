@@ -13,7 +13,7 @@ function AnimatedSection({ children }) {
       <motion.div
         initial={{ opacity: 0, y: 50 }} // Comes from bottom
         animate={{ opacity: inView ? 1 : 0, y: inView ? 0 : 50 }}
-        transition={{ duration: 2 }}
+        transition={{ duration: 1 }}
       >
         {children}
       </motion.div>

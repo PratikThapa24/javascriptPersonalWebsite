@@ -10,7 +10,7 @@ function Hero() {
         <div className="w-3/6 h-4/6 flex justify-center items-center">
           <div className="flex flex-col space-y-4">
             <h1 className="text-3xl font-bold text-custom-text-charcoal">
-              hi! I am
+              Hi! I am
             </h1>
             <h1 className="text-4xl font-extrabold text-custom-text-coolTeal">
               Pratik Thapa
