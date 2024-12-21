@@ -1,6 +1,7 @@
 import React from "react";
 import Skills from "./SkillsComponent/Skills";
 import AboutComponent from "./AboutComponent/AboutComponent";
+import Image from "./AboutComponent/Image";
 
 function About() {
   return (
@@ -15,6 +16,7 @@ function About() {
 
           {/* Skill */}
           <Skills />
+          {/* <Image /> */}
         </div>
       </div>
     </>

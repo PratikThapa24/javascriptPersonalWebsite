@@ -89,6 +89,24 @@ function NavBar() {
               experience
             </RoughNotation>
           </Link>
+          <Link
+            to="gallery"
+            className="text-lg font-bold"
+            smooth={true}
+            duration={500}
+            onMouseEnter={() => handleMouseEnter("gallery")}
+            onMouseLeave={handleMouseLeave}
+          >
+            <RoughNotation
+              type="underline"
+              show={hoveredLink === "gallery"}
+              color="#2E2E2E"
+              animationDuration={1000}
+              strokeWidth={3}
+            >
+              gallery
+            </RoughNotation>
+          </Link>
         </div>
       </div>
     </nav>

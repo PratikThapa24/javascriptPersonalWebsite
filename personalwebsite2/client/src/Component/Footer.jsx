@@ -5,7 +5,7 @@ import RoughHighlight from "./RoughHighlight";
 
 function Footer() {
   return (
-    <footer className="bg-custom-bg-image text-custom-text-charcoal py-6">
+    <footer className="bg-custom-bg-image bg-custom-text-coolTeal text-custom-text-charcoal py-6">
       <div className="container mx-auto flex flex-col md:flex-row justify-center items-center">
         {/* Left Section - Contact Info */}
 
